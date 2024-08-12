@@ -20,11 +20,28 @@ function generateMarkdown(data) {
   ## DESCRIPTION
   ${data.description}
 
+  ## INSTRUCTIONS
+  ${data.instructions}
+
+  ## USAGE
+  ${data.usage}
+
+  ## Guidelines
+  ${data.guidelines}
+
+  ## TEST
+  ${data.test}
+
+  ## LICENSE
+  ${data.license
+
+  }
+
 `;
 }
 
 module.exports = generateMarkdown;
-//add additional readme fields
+
 
 //generate license fromt he selected license
 //table of contents
