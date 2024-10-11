@@ -1,10 +1,11 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer')
+const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown')
-const fs = require('fs')
+const fs = require('fs');
 
 // TODO: Create an array of questions for user input
-const questions = [{
+const questions = [
+    {
     type: 'input',
     name: 'repository',
     message: 'What is the applicaton Repository?',
@@ -55,7 +56,7 @@ function writeToFile(fileName, data) {
     fs.writeFile(fileName,data,(error)=>{
         if (error) console.log (error)
             console.log("README created successfully")
-    })
+    });
  }
 
 // TODO: Create a function to initialize app
